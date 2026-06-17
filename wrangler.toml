@@ -1,5 +1,4 @@
 name = "katelyatv"
-compatibility_date = "2026-06-18"
 compatibility_flags = ["nodejs_compat"]
 pages_build_output_dir = ".vercel/output/static"
 
@@ -12,6 +11,7 @@ database_id = "b001fd1e-a70b-458f-a2aa-8bb9e4e5ef24"
 # 生产环境配置
 [env.production]
 name = "katelyatv"
+compatibility_date = "2026-06-18"
 
 # 生产环境 D1 数据库配置
 [[env.production.d1_databases]]
@@ -41,6 +41,7 @@ NODE_ENV = "production"
 # 预览环境配置
 [env.preview]
 name = "katelyatv-preview"
+compatibility_date = "2026-06-18"
 
 # 预览环境 D1 数据库配置
 [[env.preview.d1_databases]]
