@@ -1,21 +1,18 @@
+# 全局项目基础配置（必须放在最顶部）
 name = "katelyatv"
+# 补齐必填兼容日期，解决nodejs兼容、D1失效崩溃
+compatibility_date = "2024-09-01"
 compatibility_flags = ["nodejs_compat"]
 
-# 默认 D1 数据库配置（本地调试用）
+# 全局 D1 数据库绑定（仅本地 wrangler dev 调试生效）
 [[d1_databases]]
 binding = "DB"
 database_name = "kvideo-db"
 database_id = "b001fd1e-a70b-458f-a2aa-8bb9e4e5ef24"
 
-# 生产环境
+# 生产环境环境变量
 [env.production]
 name = "katelyatv"
-compatibility_date = "2024-09-01"
-
-[[env.production.d1_databases]]
-binding = "DB"
-database_name = "kvideo-db"
-database_id = "b001fd1e-a70b-458f-a2aa-8bb9e4e5ef24"
 
 [env.production.vars]
 NEXT_PUBLIC_STORAGE_TYPE = "d1"
@@ -35,15 +32,9 @@ LOG_LEVEL = "info"
 LOG_FORMAT = "json"
 NODE_ENV = "production"
 
-# 预览环境
+# 预览环境环境变量
 [env.preview]
 name = "katelyatv-preview"
-compatibility_date = "2024-09-01"
-
-[[env.preview.d1_databases]]
-binding = "DB"
-database_name = "kvideo-db"
-database_id = "b001fd1e-a70b-458f-a2aa-8bb9e4e5ef24"
 
 [env.preview.vars]
 NEXT_PUBLIC_STORAGE_TYPE = "d1"
