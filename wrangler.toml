@@ -1,6 +1,5 @@
 name = "katelyatv"
 compatibility_flags = ["nodejs_compat"]
-pages_build_output_dir = ".vercel/output/static"
 
 # 默认 D1 数据库配置（本地调试用）
 [[d1_databases]]
@@ -22,7 +21,7 @@ database_id = "b001fd1e-a70b-458f-a2aa-8bb9e4e5ef24"
 NEXT_PUBLIC_STORAGE_TYPE = "d1"
 NEXT_PUBLIC_SITE_NAME = "KatelyaTV"
 NEXT_PUBLIC_SITE_DESCRIPTION = "高性能影视播放平台"
-NEXTAUTH_URL = "https://tv.katelya.eu.org"
+NEXTAUTH_URL = "https://katelyatv-whl.pages.dev"
 USERNAME = "katelya"
 AUTH_PASSWORD = "ab1433223cd@"
 IMAGE_PROXY_ENABLED = "true"
@@ -50,7 +49,7 @@ database_id = "b001fd1e-a70b-458f-a2aa-8bb9e4e5ef24"
 NEXT_PUBLIC_STORAGE_TYPE = "d1"
 NEXT_PUBLIC_SITE_NAME = "KatelyaTV"
 NEXT_PUBLIC_SITE_DESCRIPTION = "高性能影视播放平台"
-NEXTAUTH_URL = "https://katelyatv.pages.dev"
+NEXTAUTH_URL = "https://katelyatv-whl.pages.dev"
 USERNAME = "katelya"
 AUTH_PASSWORD = "ab1433223cd@"
 IMAGE_PROXY_ENABLED = "true"
