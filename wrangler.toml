@@ -2,24 +2,22 @@ name = "katelyatv"
 compatibility_flags = ["nodejs_compat"]
 pages_build_output_dir = ".vercel/output/static"
 
-# 默认 D1 数据库配置（用于命令行操作）
+# 默认 D1 数据库配置（本地调试用）
 [[d1_databases]]
 binding = "DB"
 database_name = "kvideo-db"
 database_id = "b001fd1e-a70b-458f-a2aa-8bb9e4e5ef24"
 
-# 生产环境配置
+# 生产环境
 [env.production]
 name = "katelyatv"
-compatibility_date = "2026-06-18"
+compatibility_date = "2024-09-01"
 
-# 生产环境 D1 数据库配置
 [[env.production.d1_databases]]
 binding = "DB"
 database_name = "kvideo-db"
 database_id = "b001fd1e-a70b-458f-a2aa-8bb9e4e5ef24"
 
-# 生产环境变量
 [env.production.vars]
 NEXT_PUBLIC_STORAGE_TYPE = "d1"
 NEXT_PUBLIC_SITE_NAME = "KatelyaTV"
@@ -38,18 +36,16 @@ LOG_LEVEL = "info"
 LOG_FORMAT = "json"
 NODE_ENV = "production"
 
-# 预览环境配置
+# 预览环境
 [env.preview]
 name = "katelyatv-preview"
-compatibility_date = "2026-06-18"
+compatibility_date = "2024-09-01"
 
-# 预览环境 D1 数据库配置
 [[env.preview.d1_databases]]
 binding = "DB"
 database_name = "kvideo-db"
 database_id = "b001fd1e-a70b-458f-a2aa-8bb9e4e5ef24"
 
-# 预览环境变量
 [env.preview.vars]
 NEXT_PUBLIC_STORAGE_TYPE = "d1"
 NEXT_PUBLIC_SITE_NAME = "KatelyaTV"
